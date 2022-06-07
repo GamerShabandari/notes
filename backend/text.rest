@@ -1,0 +1,38 @@
+GET http://localhost:3000/notes/tempTestUserId
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+"username": "testUser",
+"password": "testUserPassword"
+}
+
+###
+
+DELETE http://localhost:3000/notes/tempNoteId123
+
+###
+
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+"title": "first note", 
+"text": "lorem ipsum",
+"author": "tempTestUserId"
+}
+
+###
+
+POST http://localhost:3000/notes/update
+Content-Type: application/json
+
+{
+"_id": "lnj50Na6Xa6148GRw2Lc-",
+"title": "uppdaterat", 
+"text": "fdfsfsd",
+"author": "tempTestUserId"
+}
