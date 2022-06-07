@@ -19,6 +19,12 @@
 .notesListItem {
   margin: 10px;
   padding: 10px;
+  width: 110px;
+  height: 150px;
+  text-align: center;
+  text-decoration: underline;
+  overflow-wrap: break-word;
+  overflow: hidden;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -27,6 +33,7 @@
 
 .notesListItem:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 
 .detailsContainer {
@@ -53,7 +60,6 @@
 }
 
 aside {
-  border: 1px black solid;
   border-radius: 3px;
   height: 100%;
   width: auto;
@@ -61,6 +67,8 @@ aside {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #008bba5e;
+  
 }
 
 .editBtn {
